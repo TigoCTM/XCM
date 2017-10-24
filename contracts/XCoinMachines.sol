@@ -1,12 +1,12 @@
-import 'zeppelin-solidity/contracts/token/StandardToken.sol';
+import 'zeppelin-solidity/contracts/token/BurnableToken.sol';
 
-pragma solidity ^0.4.4;
+pragma solidity ^0.4.13;
 
-contract XCoinMachines is StandardToken {
+contract XCoinMachines is BurnableToken {
     string public name = 'X Coin Machines';
     string public symbol = 'XCM';
-    uint public decimals = 5;
-    uint public INITIAL_SUPPLY = 1535000000000;
+    uint public decimals = 3;
+    uint public INITIAL_SUPPLY = 15350000000;
 
     function XCoinMachines() {
         totalSupply = INITIAL_SUPPLY;
